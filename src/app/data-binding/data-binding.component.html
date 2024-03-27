@@ -1,0 +1,74 @@
+<!-- <h1> My age is {{age}}</h1>
+<h1>My name is {{name}}</h1>
+<h1>isIndian:{{isIndian}}</h1>
+<h1>ages: {{ages}}</h1>
+<h1 *ngFor=" let age of ages">
+    {{ages}}
+</h1> -->
+
+<!-- <ol>
+    <li *ngFor="let state of states">
+        {{state}}
+    </li>
+</ol> -->
+
+<!-- <select name="" id="">
+    <option *ngFor="let city of cities" value="">{{city}}</option>
+
+</select> -->
+
+<!-- <h1 *ngFor="let product of products">
+    {{product.name}} = {{product.price}}
+</h1> -->
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Name:</th>
+            <th>Price:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{product.name}}
+            </td>
+            <td>{{product.price}}
+            </td>
+
+
+        </tr>
+    </tbody>
+</table>
+<br><br>
+
+<table border="2">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>exp</th>
+            <th>package</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.name}}
+            </td>
+            <td>{{employee.exp}}
+            </td>
+            <td>{{employee.package}}</td>
+
+
+        </tr>
+    </tbody>
+</table>
+<br><br>
+
+<button (click)="submit()">Submit</button>
+<br><br>
+
+<input (keypress)="store()" type="text">
+<br><br>
+
+<input type="text" [(ngModel)]="phone">
+
+<h1>{{phone}}</h1>

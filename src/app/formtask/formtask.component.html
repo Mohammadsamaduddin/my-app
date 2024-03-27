@@ -1,0 +1,52 @@
+<form [formGroup]="employeeform">
+    <label for="">Name:</label>
+    <input type="text" formControlName="name">
+    <br>
+
+    <label for="">Experience:</label>
+    <input type="number" formControlName="experience">
+    <br>
+
+    <div formGroupName="eperience">
+        <label for="">Company:</label>
+        <input type="text" formControlName="company">
+        <br>
+
+        <label for="">Experience:</label>
+        <input type="number" formControlName="experience">
+        <br>
+
+        <label for="">Package:</label>
+        <input type="number" formControlName="package">
+        <br>
+    </div>
+
+    <button (click)="add()" class="btn btn-info">Add more</button>
+
+    <div formArrayName="skills">
+        <div *ngFor="let skill of skillsFormArray.controls; let i = index">
+            <div formGroupName="{{i}}">
+                <h2>Skill:{{i+1}}</h2>
+
+                <label for="">Name:</label>
+                <input type="text" formControlName="name">
+                <br>
+
+
+                <label for="">Rating:</label>
+                <input type="number" formControlName="rating">
+                <br>
+
+                <label for="">Experience:</label>
+                <input type="number" formControlName="experience">
+                <br>
+
+                <button (click)="delete(i)" class="btn btn-danger">Delete</button>
+
+            </div>
+        </div>
+    </div>
+
+    <button (click)="submit()" class="btn btn-warning">Submit</button>
+
+</form>

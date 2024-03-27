@@ -1,0 +1,23 @@
+.parent{
+   
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    
+}
+.child{
+    height: 60%;
+    width: 40%;
+    text-align: center;
+    background-color:rgb(77, 162, 137);
+    border-radius: 20px;
+     
+
+}
+button{
+    margin: 10px;
+    width: 20%;
+}

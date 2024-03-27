@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="container2">
+        <h2>cars</h2>
+        <input  (click)="honda()" type="radio" name="cars">
+        <label style="margin-right: 10px;" for="">Honda</label>
+        <input (click)="bmw()" type="radio" name="cars">
+        <label style="margin-right: 10px;"  for="">BMW</label>
+        <input (click)="audi()" type="radio" name="cars">
+        <label style="margin-right: 10px;" for="">Audi</label>
+        <p *ngIf="isHonda"><img src="/assets/images.jpg" alt=""></p>
+        <p *ngIf="isBMW"><img src="/assets/bmw.jpg" alt=""></p>
+        <p *ngIf="isAudi"><img src="/assets/audi.jpg" alt=""></p>
+    </div>
+</div>

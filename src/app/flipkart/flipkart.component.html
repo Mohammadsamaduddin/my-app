@@ -1,0 +1,17 @@
+<div class="container">
+
+    <div *ngFor="let product of products" class="container2">
+
+        <img src="{{product.image}}" height="350x" width="300px" alt="">
+        <label class="c1">{{product.rating.rate}} <span style="color: green;">&starf;</span>{{product.rating.count}}</label>
+        <br>
+        <label style="font-size: 25px; margin-bottom: 5px;" for=""><b>{{product.category}}</b></label>
+        <label style="margin-bottom: 5px" for="">{{product.title}}</label>
+        <br><label style="margin-bottom: 5px" for=""><b>Rs.{{product.price}}</b></label><label style="margin-left: 5px; color: grey;" for=""><b><del>Rs.1999</del></b></label>
+        <label style="color: red ; margin-left:5px ; margin-bottom: 5px" for=""><b>(91% Off)</b></label>
+
+
+
+    </div>
+
+</div>

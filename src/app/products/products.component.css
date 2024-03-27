@@ -1,0 +1,19 @@
+button {
+    margin: 5px;
+    
+}
+.container{
+    height: 35%;
+    width: 100%;
+    display: flex;
+}
+.container1{
+    height: 100%;
+    width: 60%;
+
+}
+.container2{
+    height: 100%;
+    width: 40%;
+    
+}

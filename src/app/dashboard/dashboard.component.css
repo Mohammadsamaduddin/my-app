@@ -1,0 +1,33 @@
+.parent {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.left {
+
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    overflow: auto;
+
+}
+
+button {
+
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin: 3px;
+    
+
+}
+
+.right {
+    width: 80%;
+    height: 100%;
+    background-color: teal;
+    overflow: auto;
+}
